@@ -1,0 +1,289 @@
+/* ::::CSS Sequence (7 steps):::: */
+
+/* step1: parentContainer */
+/* step2: component */
+/* step3: componentContainer */
+/* step4: row */
+/* step5: column */
+/* step6: subColumn */
+/* step7: contentContainer */
+
+/* ::::: RESPONSIVE DESIGN DEVICE SIZES ::::: */
+
+/* for Responsive Target the ROW Code (display:grid) */
+
+/* Small devices (landscape phones, upto 576px and below) */
+@media (width <=576px) {
+  /* navBar */
+
+  .navBody {
+    /* background-color: #73b818; */
+    padding: 1.2rem;
+    /* box-shadow: 0px 0px 5px 2px #929090; */
+  }
+  .navLinkBox li {
+    display: none;
+  }
+  .heroSection {
+    max-width: 576px;
+    margin: auto;
+  }
+  .heroBody {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0rem;
+  }
+  hr {
+    border: 2px solid #5a5af3;
+    width: 10%;
+    margin-bottom: 2rem;
+  }
+
+  .heroBox h1 {
+    /* background-color: #9a9031; */
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  .heroImgBlock .heroBlock {
+    /* background-color: #7dc47e; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .teamBlock {
+    /* background-color: #624151; */
+    padding: 0rem;
+  }
+
+  .heroBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .heroImgBox img {
+    /* background-color: #543e7b; */
+    height: 30rem;
+    width: 100%;
+    /* aspect-ratio: 1/1; */
+  }
+
+  .heroBox button {
+    align-self: center;
+  }
+  .heroList li {
+    text-wrap: wrap;
+    font-size: 1.4rem;
+  }
+
+  .worksCardBody {
+    /* background-color: #a870a1; */
+    padding: 7rem 1rem;
+  }
+  .faqBody {
+    /* background-color: #a870a1; */
+    padding: 2rem;
+  }
+  .projectCardBody {
+    /* background-color: #3f8282; */
+    padding: 1rem;
+  }
+  .priceBody {
+    padding: 2rem 5rem;
+  }
+  .contactBody {
+    /* background-color: #bb5dbb; */
+    padding: 0rem 1.5rem;
+    row-gap: 5rem;
+  }
+  .footerBody {
+    padding: 1rem;
+  }
+  .footerMain p {
+    /* background-color: #bb5dbb; */
+    text-wrap: balance;
+  }
+
+  .copyRightsiconsBlock {
+    /* background-color: #cea282; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copyRightsIconsBox {
+    /* background-color: #885a39; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+  }
+}
+
+/* Medium devices (tablets, upto 768px and above) */
+@media (width >=577px) and (width <=768px) {
+  .grid-1,
+  .grid-2,
+  .grid-3,
+  .grid-4 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .navLinkBox li {
+    display: none;
+  }
+
+  /* .heroList li{
+    text-wrap: balance;
+  } */
+
+  .heroBody {
+    padding: 1rem 4rem;
+  }
+
+  .heroBlock {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .heroBox h1 {
+    /* background-color: #9a9031; */
+    font-size: 2.8rem;
+    text-align: start;
+  }
+
+  .contactBody {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 3rem;
+  }
+  .worksCardBody {
+    /* background-color: #a870a1; */
+    padding: 7rem 4rem;
+  }
+
+  .priceBody {
+    padding: 2rem 9rem;
+  }
+
+  .contactBody {
+    padding: 0rem 2rem;
+  }
+  .priceCard2 {
+    scale: none;
+  }
+  .contactContainer .headingBox p {
+    margin-bottom: 4rem;
+  }
+  .footerBody {
+    padding: 6rem 5rem;
+  }
+
+  .footerMain p {
+    /* background-color: #5a47db; */
+    /* text-align: center; */
+  }
+  .copyRightsBox p {
+    /* background-color: #885a39; */
+    text-align: center;
+    text-wrap: wrap;
+  }
+
+  .copyRightsiconsBlock {
+    /* background-color: #cea282; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .copyRightsIconsBox {
+    /* background-color: #885a39; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+  }
+}
+
+/* Large devices (Laptops, upto 992px and above) */
+@media (width >=769px) and (width <=992px) {
+  .footerBody {
+    padding: 6rem 5rem;
+  }
+
+  .heroBox h1 {
+    /* background-color: #9a9031; */
+    text-wrap: wrap;
+  }
+  .servicesBody {
+    /* background-color: #a870a1; */
+    padding: 1rem 3rem;
+  }
+  .ourServicesBody {
+    /* background-color: #a870a1; */
+    padding: 1rem 6rem;
+  }
+  .discoverBody {
+    /* background-color: #a870a1; */
+    padding: 2rem 4rem;
+  }
+  .discoverBox h5 {
+    /* background-color: #a86e47; */
+    text-wrap: balance;
+  }
+  .discoverBox p {
+    /* background-color: #3a606f; */
+    width: 30%;
+    line-height: 1.6;
+  }
+  .teamBlock {
+    /* background-color: #624151; */
+    padding: 0rem 4rem;
+  }
+  .priceBody {
+    padding: 2rem 19rem;
+  }
+  .priceBox {
+    padding: 3rem 0rem;
+  }
+  .contactBody {
+    padding: 0rem 6rem;
+  }
+
+  .copyRightsBody {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 2rem 5rem;
+  }
+}
+
+/* X-Large devices (large desktops, upto 1200px and above) */
+@media (width >=993px) and (width <=1200px) {
+  .servicesCardBody {
+    padding: 2rem 5rem;
+  }
+  .servicesCardBlock {
+    padding: 4rem 1rem;
+  }
+
+  .projectBody {
+    padding: 1rem;
+  }
+
+  .priceBody {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem 5rem;
+  }
+  .copyRightsBody {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 2rem 5rem;
+  }
+}
