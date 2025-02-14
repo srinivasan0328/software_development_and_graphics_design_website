@@ -103,6 +103,12 @@
     max-width: 100%;
     height: auto;
   }
+
+  .discoverBox p {
+    /* background-color: #3a606f; */
+    text-wrap: wrap;
+    width: 100%;
+  }
   .priceBody {
     padding: 2rem 3rem;
   }
@@ -314,14 +320,13 @@
 
 /* X-Large devices (large desktops, upto 1200px and above) */
 @media (width >=993px) and (width <=1200px) {
-
   .grid-3,
-  .grid-4{
+  .grid-4 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 1rem 9rem;
   }
-  .grid-4{
+  .grid-4 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -333,12 +338,12 @@
     padding: 2rem 5rem;
   }
 
-  .projectBody{
+  .projectBody {
     /* background-color: #a870a1; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 1rem 5rem;
-}
+  }
   .servicesCardBody {
     padding: 2rem 5rem;
   }
@@ -361,10 +366,10 @@
     padding: 2rem 9rem;
   }
 
-  .copyRightsBlock{
+  .copyRightsBlock {
     /* background-color: #885a39; */
-   display: flex;
-   align-items: center;
-   justify-content: flex-start;
-}
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
 }
