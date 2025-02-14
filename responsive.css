@@ -81,7 +81,7 @@
 
   .worksCardBody {
     /* background-color: #a870a1; */
-    padding: 7rem 1rem;
+    padding: 7rem 3rem;
   }
   .faqBody {
     /* background-color: #a870a1; */
@@ -89,18 +89,23 @@
   }
   .projectCardBody {
     /* background-color: #3f8282; */
-    padding: 1rem;
+    padding: 2rem 3rem;
   }
+  .servicesCardBody {
+    /* background-color: #d25656; */
+    padding: 2rem;
+    /* gap: 2rem; */
+}
   .priceBody {
     padding: 2rem 5rem;
   }
   .contactBody {
     /* background-color: #bb5dbb; */
-    padding: 0rem 1.5rem;
+    padding: 0rem 2rem;
     row-gap: 5rem;
   }
   .footerBody {
-    padding: 1rem;
+    padding: 2rem;
   }
   .footerMain p {
     /* background-color: #bb5dbb; */
