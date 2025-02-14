@@ -93,9 +93,16 @@
   }
   .servicesCardBody {
     /* background-color: #d25656; */
+    display: grid;
+    grid-template-columns: 1fr;
     padding: 2rem;
     /* gap: 2rem; */
   }
+  .serviceImgBox img{
+    /* background-color: #523285; */
+    max-width: 100%;
+    height: auto;
+}
   .priceBody {
     padding: 2rem 5rem;
   }
