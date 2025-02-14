@@ -524,7 +524,8 @@ hr{
 /* step7: contentContainer */
 .serviceImgBox img{
     /* background-color: #523285; */
-    height: 40rem;
+    max-width: 100%;
+    height: auto;
 }
 
 /* mainColumn2 */
