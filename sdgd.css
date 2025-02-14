@@ -1331,6 +1331,15 @@ hr{
     width: 35px;
 }
 
+.copyRightsIcons i:hover{
+    background-color: var(--tertiaryColor);
+}
+
+.copyRightsIcons i:hover{
+    color: var(--whiteColor);
+}
+
+
 .fixedIcons1{
     display: flex;
     align-items: center;
