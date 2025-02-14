@@ -929,6 +929,10 @@ hr{
 .priceCradMain i{
     /* background-color: #bb5dbb; */
     padding-right: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 0.5rem;
 }
 
 .priceCradMain li{
@@ -937,6 +941,7 @@ hr{
     margin-bottom: 1rem;
     font-family: var(--ffPrimary);
     color: var(--lightColor);
+    display: flex;
 }
 
 
@@ -1070,6 +1075,7 @@ hr{
 /* step3: componentContainer */
 .contactContainer{
     /* background-color: #9aacac; */
+    padding-bottom: 5rem;
 }
 
 .contactContainer .headingBox p{
@@ -1234,6 +1240,14 @@ hr{
     list-style: none;
     margin-bottom: 1rem;
     display: flex;
+    color: #777777;
+    font-family: var(--ffPrimary);
+}
+
+.list2 a{
+    color: var(--lowLightColor);
+    font-weight: 500;
+    font-family: var(--ffPrimary);
 }
 
 .footerMain i{

@@ -98,17 +98,21 @@
     padding: 2rem;
     /* gap: 2rem; */
   }
-  .serviceImgBox img{
+  .serviceImgBox img {
     /* background-color: #523285; */
     max-width: 100%;
     height: auto;
-}
+  }
   .priceBody {
-    padding: 2rem 5rem;
+    padding: 2rem 3rem;
   }
   .priceCard2 {
     scale: none;
- }
+  }
+  .priceCradMain li {
+    /* background-color: #bb5dbb; */
+    font-size: 1.4rem;
+  }
   .contactBody {
     /* background-color: #bb5dbb; */
     padding: 0rem 2rem;
@@ -121,12 +125,12 @@
     /* background-color: #bb5dbb; */
     text-wrap: balance;
   }
-  .copyRightsBox p{
+  .copyRightsBox p {
     /* background-color: #885a39; */
     text-align: center;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.8rem;
     text-wrap: wrap;
-}
+  }
 
   .copyRightsiconsBlock {
     /* background-color: #cea282; */
@@ -310,6 +314,31 @@
 
 /* X-Large devices (large desktops, upto 1200px and above) */
 @media (width >=993px) and (width <=1200px) {
+
+  .grid-3,
+  .grid-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 1rem 9rem;
+  }
+  .grid-4{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .heroBody {
+    /* background-color: #8a2be2; */
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 2rem;
+    padding: 2rem 5rem;
+  }
+
+  .projectBody{
+    /* background-color: #a870a1; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 5rem;
+}
   .servicesCardBody {
     padding: 2rem 5rem;
   }
@@ -318,7 +347,7 @@
   }
 
   .projectBody {
-    padding: 1rem;
+    padding: 1rem 9rem;
   }
 
   .priceBody {
@@ -329,6 +358,13 @@
   .copyRightsBody {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 2rem 5rem;
+    padding: 2rem 9rem;
   }
+
+  .copyRightsBlock{
+    /* background-color: #885a39; */
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+}
 }
