@@ -106,6 +106,9 @@
   .priceBody {
     padding: 2rem 5rem;
   }
+  .priceCard2 {
+    scale: none;
+ }
   .contactBody {
     /* background-color: #bb5dbb; */
     padding: 0rem 2rem;
@@ -118,6 +121,12 @@
     /* background-color: #bb5dbb; */
     text-wrap: balance;
   }
+  .copyRightsBox p{
+    /* background-color: #885a39; */
+    text-align: center;
+    margin-bottom: 0.5rem;
+    text-wrap: wrap;
+}
 
   .copyRightsiconsBlock {
     /* background-color: #cea282; */
