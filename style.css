@@ -99,10 +99,12 @@ svg {
 .align {
     max-width: 1200px;
     margin: auto;
+    
  }
 
 .componentSpacing {
     padding: 3rem 0rem;
+    overflow-wrap: anywhere;
 }
 
 .grid-1 {

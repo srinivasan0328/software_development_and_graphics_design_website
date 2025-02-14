@@ -90,12 +90,10 @@
 
 .heroSection{
     /* background-color: #00ffff; */
-    
 }
 
 .heroContainer{
     /* background-color: #0000ff; */
-    
 }
 
 .heroBody{
@@ -110,6 +108,7 @@
     align-items: center;
     justify-content: flex-start;
     padding: 0rem 2.1rem;
+    grid-area: text;
 }
 
 .heroBox{
@@ -175,6 +174,7 @@
 
 .heroImgBlock{
     /* background-color: #7dc47e; */
+    grid-area: image;
 }
 .heroImgBox{
     /* background-color: #4e7c91; */
@@ -1064,7 +1064,8 @@ hr{
 /* step2: component */
 .contactSection{
     background-color: #EEEEF5;
-    padding: 8rem 0rem;
+    /* padding: 8rem 0rem; */
+    overflow-wrap: anywhere;
 }
 
 /* step3: componentContainer */
@@ -1141,17 +1142,28 @@ hr{
     margin-bottom: 2rem;
 }
 
+.contactBox iframe{
+    aspect-ratio: 1/1;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    border:0;
+    /* box-shadow: 0 0 30px rgb(214, 215, 216); */
+}
+
 /* footer */
 
 
 /* step2: component */
 .footerSection{
-    /* background-color: #c9c9ce; */
+    background-color: #ffffff;
 }
 
 /* step3: componentContainer */
 .footerContainer{
     /* background-color: #9aacac; */
+    max-width: 100%;
+    margin: auto;
 }
 
 /* step4: row */
@@ -1315,7 +1327,6 @@ hr{
 }
 
 .copyRightsIcons{
-    /* width: 100%; */
     /* background-color: #213730; */
     padding-left: 0.8rem;
 }
@@ -1329,16 +1340,14 @@ hr{
     border-radius: 50px;
     height: 35px;
     width: 35px;
+    color: #434175;
 }
 
 .copyRightsIcons i:hover{
     background-color: var(--tertiaryColor);
-}
-
-.copyRightsIcons i:hover{
+    transition: all 0.3s ease-in-out;
     color: var(--whiteColor);
 }
-
 
 .fixedIcons1{
     display: flex;

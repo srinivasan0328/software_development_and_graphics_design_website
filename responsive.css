@@ -13,7 +13,12 @@
 /* for Responsive Target the ROW Code (display:grid) */
 
 /* Small devices (landscape phones, upto 576px and below) */
-@media (width <=576px) {
+@media (max-width: 576px) {
+  /* .align{
+    max-width: 100%;
+    width: 90%;
+    margin: auto;
+  } */
   /* navBar */
 
   .navBody {
@@ -24,14 +29,12 @@
   .navLinkBox li {
     display: none;
   }
-  .heroSection {
-    max-width: 576px;
-    margin: auto;
-  }
   .heroBody {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 0rem;
+    grid-template-areas:
+      "image"
+      "text";
   }
   hr {
     border: 2px solid #5a5af3;
@@ -44,12 +47,13 @@
     font-size: 2.8rem;
     text-align: center;
   }
-  .heroImgBlock .heroBlock {
-    /* background-color: #7dc47e; */
+
+  .heroBlock {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    grid-area: text;
+    /* width: 100%; */
   }
   .teamBlock {
     /* background-color: #624151; */
@@ -60,7 +64,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 
   .heroImgBox img {
@@ -124,7 +128,7 @@
 }
 
 /* Medium devices (tablets, upto 768px and above) */
-@media (width >=577px) and (width <=768px) {
+@media (min-width: 577px) and (max-width: 768px) {
   .grid-1,
   .grid-2,
   .grid-3,
@@ -142,19 +146,26 @@
   } */
 
   .heroBody {
+    display: flex;
+    flex-direction: column-reverse;
     padding: 1rem 4rem;
   }
 
   .heroBlock {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .heroBox h1 {
     /* background-color: #9a9031; */
     font-size: 2.8rem;
     text-align: start;
+  }
+
+  .heroList li {
+    /* background-color: #8b3e7d; */
+    text-wrap: wrap;
   }
 
   .contactBody {
@@ -215,6 +226,20 @@
 @media (width >=769px) and (width <=992px) {
   .footerBody {
     padding: 6rem 5rem;
+  }
+
+  .heroBody {
+    /* background-color: #8a2be2; */
+    /* column-gap: 0rem; */
+    padding: 1rem 2rem;
+  }
+
+  .heroBlock {
+    background-color: #945d8b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0rem 2.1rem; */
   }
 
   .heroBox h1 {
